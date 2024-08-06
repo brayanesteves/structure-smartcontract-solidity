@@ -1,9 +1,9 @@
 pragma solidity ^0.5.0;
 
 interface MyToken {
-    function decimals()                 external view returns(uint8);
-    function balanceOf(address account) external view returns(uint256);
-    function transfer(address _to, uint256 _value) public returns (bool success);
+    function decimals()                            external view returns(uint8);
+    function balanceOf(address account)            external view returns(uint256);
+    function transfer(address _to, uint256 _value) external      returns (bool success);
 }
 
 contract TokenSale {
