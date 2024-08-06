@@ -23,7 +23,8 @@ contract MyCoin {
     event Approval(address indexed _owner, address indexed _spender, uint256 _value);
 
     /**
-     * Transferir fondos de 'address' a 'address' 
+     * [ENG] Transfer funds from 'address' to 'address'.
+     * [ESP] Transferir fondos de 'address' a 'address'.
      */
     function transfer(address _to, uint256 _value) public returns (bool success) {
         require(balanceOf[msg.sender] >= _value);
