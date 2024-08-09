@@ -16,7 +16,7 @@ contract MyCoin {
         symbol                = 'MC';
         decimals              = 18;
         totalSuply            = 1000000 * (uint256(10) ** decimals);
-        balanceOf[msg.sender] = ;totalSuply
+        balanceOf[msg.sender] = totalSuply
     }
 
     event Transfer(address indexed _from, address indexed _to, uint256 _value);
