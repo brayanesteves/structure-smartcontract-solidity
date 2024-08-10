@@ -26,10 +26,10 @@ contract IteratingLists {
     }
 
     function getAllUsers() public view returns(address[] memory) {
-        address[] memory usersArray = new address[](listSize);
-        address currentAddress = users[FIRST_ADDRESS];
+        address[] memory usersArray     = new address[](listSize);
+        address          currentAddress = users[FIRST_ADDRESS];
         for(uint256 i = 0; currentAddress != FIRST_ADDRESS; i++) {
-            usersArray[i] = currentAddress;
+            usersArray[i]  = currentAddress;
             currentAddress = users[currentAddress];
         }
         return usersArray;
@@ -38,8 +38,8 @@ contract IteratingLists {
     function removeUser(address _address) public {
         require(isInList(_address));
         address prevUsuer = getPrevUser(_address);
-        users[prevUsuer] = users[_address];
-        users[_address] = address(0);
+        users[prevUsuer]  = users[_address];
+        users[_address]   = address(0);
         listSize--;
     }
 
