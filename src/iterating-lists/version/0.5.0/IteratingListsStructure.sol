@@ -6,6 +6,14 @@ contract IteratingLists {
     uint256          public listSize;
     address constant public FIRST_ADDRESS = address(1);
 
+    struct User {
+        string firstName;
+        string lastName;
+        string email;
+    }
+
+    mapping(address => User) dataUsers;
+
     constructor() public {
         users[FIRST_ADDRESS] = FIRST_ADDRESS;
     }
