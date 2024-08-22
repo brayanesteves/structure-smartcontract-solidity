@@ -1,7 +1,8 @@
 // SPDX-License-Identifier: UNLICENSED
 pragma solidity ^0.6.0;
 
-import "@chainlink/contracts/src/v0.6/ChainlinkClient.sol";
+// import "@chainlink/contracts/src/v0.6/ChainlinkClient.sol";
+import "https://row.githubusercontent.com/smartcontractkit/chainlink/develop/evm-contracts/src/v0.6/ChainlinkClient.sol";
 
 contract Clock is ChainlinkClient {
 
